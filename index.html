@@ -1,74 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Oscar Ocampos</title>
+    <title>Diseño Pastel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-- Sección de cabecera -->
-    <header>
-        <h1>¡Hola! Soy Oscar</h1>
-        <p>Desarrollador en Java</p>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Sección de presentación -->
-    <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>"Soy un desarrollador enfocado en crear soluciones innovadoras y eficientes. Con experiencia en Java, MySQL y
-            tecnologías web como HTML y CSS, me especializo en el desarrollo de aplicaciones y el diseño de interfaces
-            funcionales. Además, soy fundador de  <strong>ocampOS</strong>, una empresa dedicada al desarrollo de software personalizado,
-            donde transformamos ideas en soluciones digitales a medida."</p>
-        <div class="about-photo">
-            <img src="imagenes/oscar.jpg" alt="Foto de Oscar Ocampos (ocampOS)">
+    <div class="container">
+        <h1 id="titulo" class="pastel-title">Hola, Mundo</h1>
+        <button id="cambiarTexto" class="pastel-button">Cambiar Texto</button>
+        <div class="input-group">
+            <input type="text" id="entradaTexto" placeholder="Escribe algo aquí" class="pastel-input">
+            <input type="number" id="veces" placeholder="Repeticiones" class="pastel-input">
         </div>
-        <div class="about-photo2">
-            <img src="imagenes/Logo moderno de tecnología azul y verde (3).png" .jpg" alt="Otra foto de [Tu Nombre]">
-        </div>
-    </section>
+        <button id="actualizarTexto" class="pastel-button">Actualizar</button>
+        <button id="limpiarTexto" class="pastel-button limpiar">Limpiar</button>
+        <div id="contenedor" class="result-container"></div>
+    </div>
 
-    <!-- Sección de proyectos -->
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Sistema Gestion de Califiaciones (SGC)</h3>
-            <p>Facilita el control de estudiantes, cursos y calificaciones en instituciones educativas. Utiliza Java
-                (Swing) para la interfaz, MySQL para la base de datos, y JasperReports para generar reportes. Soluciona
-                la automatización del registro de notas, el control de acceso según roles (docentes y administradores) y
-                la generación de informes de rendimiento académico.</p>
-        </div>
-        <div class="project">
-            <h3>Sistema de Gestión de Auto Lavado (CarWash)</h3>
-            <p>facilita la administración de clientes, citas y servicios de un autolavado. Desarrollado en Java (Swing)
-                y MySQL, automatiza la reserva de citas y optimiza la gestión de servicios, mejorando la organización y
-                experiencia del cliente.</p>
-        </div>
-    </section>
+    <!-- Botón de cambio de modo con iconos -->
+    <button id="modoOscuro" class="modo-oscuro-btn">🌙</button>
 
-    <!-- Sección de contacto -->
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de:</p>
-        <ul>
-            <li>Email: <a href="ocamposortigozaoscardavid@gmail.com">ocamposortigozaoscradavid@gmail.com</a></li>
-            <li>GitHub: <a href="">https://github.com/Oscar2244</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 [ocampOS]</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
